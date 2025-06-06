@@ -63,7 +63,7 @@ public class ItemEspecial extends Item
 		{
 			return this;
 		}
-		Item buscar = this.listaItems.stream().map(a->a.guardarObjetos(item)).filter(a->a.hayCapacidad(item)).findFirst().orElse(null);
+		Item buscar = this.listaItems.stream().filter(a->a.hayCapacidad(item)).min((a,b)->a.masEspacio(b)).orElse(null);
 		return buscar;
 	}
 	

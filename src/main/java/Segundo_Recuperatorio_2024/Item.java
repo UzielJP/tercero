@@ -54,4 +54,18 @@ public abstract class Item
 		return 0;
 	}
 	
+	protected int masEspacio(Item item)
+	{
+		if(item.soyMayorQue(this.getCapacidad()))
+		{
+			return item.getCapacidad();
+		}
+		return this.getCapacidad();
+	}
+	
+	protected boolean soyMayorQue(int capacidad)
+	{
+		return this.getCapacidad()>capacidad;
+	}
+	
 }

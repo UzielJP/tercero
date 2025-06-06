@@ -1,4 +1,4 @@
-package Primer_Fecha_2023;
+package Parcial_10_06_2023;
 
 import java.util.Comparator;
 import java.util.List;

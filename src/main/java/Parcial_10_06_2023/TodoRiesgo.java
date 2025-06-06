@@ -1,6 +1,6 @@
-package Primer_Fecha_2023;
+package Parcial_10_06_2023;
 
-public class TodoRiesgo extends BuilderSeguro
+public class TodoRiesgo extends Seguro
 {
 
 	@Override
